@@ -1,1 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroAcademy - Cursos de Agricultura</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
 
+<header>
+    <div class="logo">🌱 AgroAcademy</div>
+
+    <nav id="menu">
+        <a href="#home">Início</a>
+        <a href="#cursos">Cursos</a>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <div class="buttons">
+        <button class="btn-login">Entrar</button>
+        <button class="btn-cadastro">Cadastrar</button>
+    </div>
+
+    <div class="menu-mobile" id="menu-mobile">
+        <i class="fas fa-bars"></i>
+    </div>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h1>Aprenda Agricultura Moderna com Especialistas</h1>
+        <p>
+            Cursos online sobre agricultura sustentável,
+            irrigação, tecnologia e gestão rural.
+        </p>
+        <a href="#cursos" class="btn-principal">Explorar Cursos</a>
+    </div>
+</section>
+
+<section class="busca">
+    <h2>Encontre seu curso</h2>
+    <input type="text" id="searchInput" placeholder="Pesquisar cursos...">
+</section>
+
+<section class="cursos" id="cursos">
+    <h2>Nossos Cursos</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399" alt="">
+            <h3>Agricultura Sustentável</h3>
+            <p>Práticas sustentáveis para aumentar a produtividade.</p>
+            <span>40 Horas</span>
+            <button>Ver Curso</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854" alt="">
+            <h3>Irrigação Inteligente</h3>
+            <p>Gestão eficiente da água no campo.</p>
+            <span>30 Horas</span>
+            <button>Ver Curso</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" alt="">
+            <h3>Agricultura de Precisão</h3>
+            <p>Uso de tecnologia para otimizar a produção.</p>
+            <span>50 Horas</span>
+            <button>Ver Curso</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30" alt="">
+            <h3>Gestão Rural</h3>
+            <p>Administração moderna para propriedades rurais.</p>
+            <span>35 Horas</span>
+            <button>Ver Curso</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1471193945509-9ad0617afabf" alt="">
+            <h3>Produção Orgânica</h3>
+            <p>Técnicas para produção livre de agrotóxicos.</p>
+            <span>25 Horas</span>
+            <button>Ver Curso</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1499529112087-3cb3b73cec95" alt="">
+            <h3>Tecnologia no Agronegócio</h3>
+            <p>Inovação e transformação digital no campo.</p>
+            <span>45 Horas</span>
+            <button>Ver Curso</button>
+        </div>
+
+    </div>
+</section>
+
+<section class="beneficios" id="beneficios">
+    <h2>Benefícios</h2>
+
+    <div class="beneficios-grid">
+        <div>📜 Certificado Digital</div>
+        <div>♾️ Acesso Vitalício</div>
+        <div>🚀 Conteúdo Atualizado</div>
+        <div>👨‍🏫 Suporte Especializado</div>
+    </div>
+</section>
+
+<section class="estatisticas">
+    <div class="stat">
+        <h3 class="counter" data-target="15000">0</h3>
+        <p>Alunos</p>
+    </div>
+
+    <div class="stat">
+        <h3 class="counter" data-target="120">0</h3>
+        <p>Cursos</p>
+    </div>
+
+    <div class="stat">
+        <h3 class="counter" data-target="45">0</h3>
+        <p>Instrutores</p>
+    </div>
+
+    <div class="stat">
+        <h3 class="counter" data-target="25000">0</h3>
+        <p>Certificados</p>
+    </div>
+</section>
+
+<section class="depoimentos" id="depoimentos">
+    <h2>Depoimentos</h2>
+
+    <div class="slider">
+        <div class="slide active">
+            <h3>João Silva</h3>
+            <p>"Excelente plataforma. Aprendi muito."</p>
+        </div>
+
+        <div class="slide">
+            <h3>Maria Oliveira</h3>
+            <p>"Cursos completos e professores qualificados."</p>
+        </div>
+
+        <div class="slide">
+            <h3>Carlos Mendes</h3>
+            <p>"Consegui aplicar tudo na minha propriedade."</p>
+        </div>
+    </div>
+</section>
+
+<section class="contato" id="contato">
+    <h2>Fale Conosco</h2>
+
+    <form id="contactForm">
+        <input type="text" id="nome" placeholder="Nome">
+        <input type="email" id="email" placeholder="E-mail">
+        <input type="tel" id="telefone" placeholder="Telefone">
+        <textarea id="mensagem" placeholder="Mensagem"></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 AgroAcademy - Todos os direitos reservados.</p>
+</footer>
+
+<button id="topBtn">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
