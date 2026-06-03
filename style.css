@@ -1,1 +1,273 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
 
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+header{
+    background:#2E7D32;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 5%;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+}
+
+nav{
+    display:flex;
+    gap:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+.buttons button{
+    padding:10px 15px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.btn-login{
+    background:white;
+    color:#2E7D32;
+}
+
+.btn-cadastro{
+    background:#66BB6A;
+    color:white;
+}
+
+.hero{
+    height:90vh;
+    background:url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854')
+    center/cover;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content{
+    background:rgba(0,0,0,0.5);
+    padding:40px;
+    border-radius:10px;
+}
+
+.hero h1{
+    font-size:3rem;
+}
+
+.btn-principal{
+    display:inline-block;
+    margin-top:20px;
+    padding:15px 25px;
+    background:#66BB6A;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+.busca{
+    padding:50px;
+    text-align:center;
+}
+
+.busca input{
+    width:80%;
+    max-width:600px;
+    padding:15px;
+}
+
+.cursos{
+    padding:60px 5%;
+}
+
+.cursos h2{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 10px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.card h3,
+.card p,
+.card span{
+    padding:10px 15px;
+}
+
+.card button{
+    margin:15px;
+    padding:10px;
+    width:calc(100% - 30px);
+    border:none;
+    background:#2E7D32;
+    color:white;
+    cursor:pointer;
+}
+
+.beneficios{
+    background:white;
+    padding:60px;
+    text-align:center;
+}
+
+.beneficios-grid{
+    margin-top:30px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.beneficios-grid div{
+    background:#66BB6A;
+    color:white;
+    padding:25px;
+    border-radius:10px;
+}
+
+.estatisticas{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    text-align:center;
+    padding:60px;
+    background:#2E7D32;
+    color:white;
+}
+
+.depoimentos{
+    padding:60px;
+    text-align:center;
+}
+
+.slide{
+    display:none;
+}
+
+.slide.active{
+    display:block;
+}
+
+.contato{
+    padding:60px;
+    background:white;
+}
+
+.contato form{
+    max-width:700px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.contato input,
+.contato textarea{
+    padding:15px;
+}
+
+.contato button{
+    padding:15px;
+    border:none;
+    background:#2E7D32;
+    color:white;
+    cursor:pointer;
+}
+
+footer{
+    background:#1b5e20;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+#topBtn{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:50px;
+    height:50px;
+    border:none;
+    border-radius:50%;
+    background:#2E7D32;
+    color:white;
+    cursor:pointer;
+}
+
+.menu-mobile{
+    display:none;
+}
+
+@media(max-width:768px){
+
+    nav{
+        display:none;
+        flex-direction:column;
+        position:absolute;
+        top:70px;
+        left:0;
+        width:100%;
+        background:#2E7D32;
+        padding:20px;
+    }
+
+    nav.active{
+        display:flex;
+    }
+
+    .menu-mobile{
+        display:block;
+        font-size:24px;
+        cursor:pointer;
+    }
+
+    .buttons{
+        display:none;
+    }
+
+    .hero h1{
+        font-size:2rem;
+    }
+}
