@@ -1,3 +1,6 @@
+/* =========================
+   RESET
+========================= */
 *{
     margin:0;
     padding:0;
@@ -14,35 +17,45 @@ body{
     color:#333;
 }
 
+/* =========================
+   HEADER (CORRIGIDO)
+========================= */
 header{
     background:#2e7d32;
     color:white;
+
     display:flex;
     justify-content:space-between;
     align-items:center;
+
     padding:15px 50px;
     position:sticky;
     top:0;
     z-index:1000;
 }
 
+/* AGRUPA LOGO + NOME */
 .logo-area{
     display:flex;
     align-items:center;
-    gap:15px;
+    gap:10px;
 }
 
-.logo{
-    width:60px;
-    height:60px;
+/* LOGO MENOR E CORRETA */
+.logo img{
+    width:40px;
+    height:40px;
+    object-fit:contain;
 }
 
-.logo img {
-    width: 40px;
-    height: 40px;
-    object-fit: contain;
+/* NOME DO SITE */
+.logo-name{
+    font-size:1.5rem;
+    font-weight:bold;
+    color:white;
 }
 
+/* MENU */
 nav{
     display:flex;
     gap:15px;
@@ -61,6 +74,9 @@ nav a:hover{
     background:#66bb6a;
 }
 
+/* =========================
+   HERO
+========================= */
 .hero{
     text-align:center;
     padding:80px 20px;
@@ -84,6 +100,9 @@ nav a:hover{
     font-size:1.2rem;
 }
 
+/* =========================
+   CURSOS
+========================= */
 #cursos{
     padding:70px 40px;
 }
@@ -128,6 +147,9 @@ nav a:hover{
     padding:0 15px 20px;
 }
 
+/* =========================
+   SOBRE
+========================= */
 #sobre{
     background:#e8f5e9;
     padding:70px 20px;
@@ -155,6 +177,9 @@ nav a:hover{
     margin-bottom:10px;
 }
 
+/* =========================
+   FOOTER
+========================= */
 footer{
     background:#1b5e20;
     color:white;
@@ -169,6 +194,9 @@ footer p{
     margin:8px 0;
 }
 
+/* =========================
+   RESPONSIVO
+========================= */
 @media (max-width:768px){
 
     header{
