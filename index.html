@@ -3,179 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AgroAcademy - Cursos de Agricultura</title>
+    <title>AgroEduca - Cursos para o Agronegócio</title>
+
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
 <header>
-    <div class="logo">🌱 AgroAcademy</div>
+    <div class="logo-area">
 
-    <nav id="menu">
-        <a href="#home">Início</a>
+        <div class="logo">
+            <svg viewBox="0 0 200 200">
+                <g fill="#81c784">
+                    <path d="M100 20 C130 20 145 45 140 70 C120 65 100 50 100 20Z"/>
+                    <path d="M165 110 C175 140 155 165 125 170 C125 145 140 120 165 110Z"/>
+                    <path d="M45 165 C15 155 10 125 25 100 C45 115 55 140 45 165Z"/>
+                </g>
+            </svg>
+        </div>
+
+        <div class="logo-name">AgroEduca</div>
+
+    </div>
+
+    <nav>
         <a href="#cursos">Cursos</a>
-        <a href="#beneficios">Benefícios</a>
-        <a href="#depoimentos">Depoimentos</a>
+        <a href="#sobre">Sobre</a>
         <a href="#contato">Contato</a>
     </nav>
-
-    <div class="buttons">
-        <button class="btn-login">Entrar</button>
-        <button class="btn-cadastro">Cadastrar</button>
-    </div>
-
-    <div class="menu-mobile" id="menu-mobile">
-        <i class="fas fa-bars"></i>
-    </div>
 </header>
 
-<section class="hero" id="home">
-    <div class="hero-content">
-        <h1>Aprenda Agricultura Moderna com Especialistas</h1>
-        <p>
-            Cursos online sobre agricultura sustentável,
-            irrigação, tecnologia e gestão rural.
-        </p>
-        <a href="#cursos" class="btn-principal">Explorar Cursos</a>
-    </div>
+<section class="hero">
+    <h1>Aprenda e Cresça no Agronegócio</h1>
+    <p>Cursos online para transformar conhecimento em resultados.</p>
 </section>
 
-<section class="busca">
-    <h2>Encontre seu curso</h2>
-    <input type="text" id="searchInput" placeholder="Pesquisar cursos...">
-</section>
+<section id="cursos">
+    <h2 class="titulo">Cursos Disponíveis</h2>
 
-<section class="cursos" id="cursos">
-    <h2>Nossos Cursos</h2>
+    <div class="cursos-grid">
 
-    <div class="cards">
-
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399" alt="">
+        <div class="curso">
+            <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=800&q=80" alt="Agricultura">
             <h3>Agricultura Sustentável</h3>
-            <p>Práticas sustentáveis para aumentar a produtividade.</p>
-            <span>40 Horas</span>
-            <button>Ver Curso</button>
+            <p>Práticas modernas para aumentar a produtividade preservando o meio ambiente.</p>
         </div>
 
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854" alt="">
-            <h3>Irrigação Inteligente</h3>
-            <p>Gestão eficiente da água no campo.</p>
-            <span>30 Horas</span>
-            <button>Ver Curso</button>
+        <div class="curso">
+            <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=800&q=80" alt="Pecuária">
+            <h3>Pecuária de Precisão</h3>
+            <p>Gestão inteligente do rebanho com tecnologia e monitoramento.</p>
         </div>
 
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" alt="">
-            <h3>Agricultura de Precisão</h3>
-            <p>Uso de tecnologia para otimizar a produção.</p>
-            <span>50 Horas</span>
-            <button>Ver Curso</button>
+        <div class="curso">
+            <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=800&q=80" alt="Hortaliças">
+            <h3>Produção de Hortaliças</h3>
+            <p>Técnicas de cultivo para pequenos e grandes produtores.</p>
         </div>
 
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30" alt="">
+        <div class="curso">
+            <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80" alt="Gestão Rural">
             <h3>Gestão Rural</h3>
-            <p>Administração moderna para propriedades rurais.</p>
-            <span>35 Horas</span>
-            <button>Ver Curso</button>
+            <p>Administração financeira e estratégica para propriedades rurais.</p>
+        </div>
+
+        <div class="curso">
+            <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=800&q=80" alt="Irrigação">
+            <h3>Irrigação Inteligente</h3>
+            <p>Economize água e aumente a produtividade utilizando técnicas modernas.</p>
+        </div>
+
+        <div class="curso">
+            <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=800&q=80" alt="Agroecologia">
+            <h3>Agroecologia</h3>
+            <p>Produção sustentável com foco em equilíbrio ambiental.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="sobre">
+    <h2 class="titulo">Sobre a AgroEduca</h2>
+
+    <div class="estatisticas">
+
+        <div class="card">
+            <h2>12.500+</h2>
+            <p>Alunos Certificados</p>
         </div>
 
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1471193945509-9ad0617afabf" alt="">
-            <h3>Produção Orgânica</h3>
-            <p>Técnicas para produção livre de agrotóxicos.</p>
-            <span>25 Horas</span>
-            <button>Ver Curso</button>
+            <h2>45</h2>
+            <p>Cursos Disponíveis</p>
         </div>
 
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1499529112087-3cb3b73cec95" alt="">
-            <h3>Tecnologia no Agronegócio</h3>
-            <p>Inovação e transformação digital no campo.</p>
-            <span>45 Horas</span>
-            <button>Ver Curso</button>
+            <h2>4,9 ★</h2>
+            <p>Avaliação Média</p>
         </div>
 
     </div>
 </section>
 
-<section class="beneficios" id="beneficios">
-    <h2>Benefícios</h2>
+<footer id="contato">
+    <h2>Contato</h2>
+    <p>📧 contato@agroeduca.com.br</p>
+    <p>📞 (11) 99999-9999</p>
+    <p>📍 São Paulo - SP</p>
 
-    <div class="beneficios-grid">
-        <div>📜 Certificado Digital</div>
-        <div>♾️ Acesso Vitalício</div>
-        <div>🚀 Conteúdo Atualizado</div>
-        <div>👨‍🏫 Suporte Especializado</div>
-    </div>
-</section>
+    <br>
 
-<section class="estatisticas">
-    <div class="stat">
-        <h3 class="counter" data-target="15000">0</h3>
-        <p>Alunos</p>
-    </div>
-
-    <div class="stat">
-        <h3 class="counter" data-target="120">0</h3>
-        <p>Cursos</p>
-    </div>
-
-    <div class="stat">
-        <h3 class="counter" data-target="45">0</h3>
-        <p>Instrutores</p>
-    </div>
-
-    <div class="stat">
-        <h3 class="counter" data-target="25000">0</h3>
-        <p>Certificados</p>
-    </div>
-</section>
-
-<section class="depoimentos" id="depoimentos">
-    <h2>Depoimentos</h2>
-
-    <div class="slider">
-        <div class="slide active">
-            <h3>João Silva</h3>
-            <p>"Excelente plataforma. Aprendi muito."</p>
-        </div>
-
-        <div class="slide">
-            <h3>Maria Oliveira</h3>
-            <p>"Cursos completos e professores qualificados."</p>
-        </div>
-
-        <div class="slide">
-            <h3>Carlos Mendes</h3>
-            <p>"Consegui aplicar tudo na minha propriedade."</p>
-        </div>
-    </div>
-</section>
-
-<section class="contato" id="contato">
-    <h2>Fale Conosco</h2>
-
-    <form id="contactForm">
-        <input type="text" id="nome" placeholder="Nome">
-        <input type="email" id="email" placeholder="E-mail">
-        <input type="tel" id="telefone" placeholder="Telefone">
-        <textarea id="mensagem" placeholder="Mensagem"></textarea>
-
-        <button type="submit">Enviar</button>
-    </form>
-</section>
-
-<footer>
-    <p>© 2026 AgroAcademy - Todos os direitos reservados.</p>
+    <p>© 2026 AgroEduca - Todos os direitos reservados.</p>
 </footer>
 
-<button id="topBtn">↑</button>
-
 <script src="script.js"></script>
+
 </body>
 </html>
