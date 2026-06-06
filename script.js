@@ -4,10 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const cards = document.querySelectorAll(".curso");
 
-    cards.forEach(card => {
-        card.addEventListener("click", () => {
-            alert("Em breve você poderá acessar este curso!");
-        });
-    });
+    
+    
 
 });
