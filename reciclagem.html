@@ -1,152 +1,305 @@
+
+
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 
+
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Reciclagem - AgroEduca</title>
 
+
+
     <link rel="stylesheet" href="style.css">
+
 </head>
+
+
 
 <body>
 
+
+
 <header class="header">
 
+
+
     <div class="logo-area">
+
         <div class="logo">
+
             <img src="seedling_1f331.png" alt="AgroEduca Logo">
+
         </div>
+
+
 
         <div class="logo-name">
+
             AgroEduca
+
         </div>
+
     </div>
 
+
+
     <nav>
+
         <a href="index.html">← Voltar ao Início</a>
+
     </nav>
+
+
 
 </header>
 
+
+
 <main class="conteudo-aula">
+
+
 
     <h1>♻️ Reciclagem</h1>
 
+
+
     <h2>O que é reciclagem?</h2>
 
+
+
     <p>
+
         Reciclagem é o ato de transformar um material já utilizado em algo novo,
+
         evitando o desperdício e a poluição.
+
     </p>
+
+
 
     <h2>Quais são os perigos enfrentados pelo agronegócio sem a reciclagem?</h2>
 
+
+
     <p>
+
         Não reciclar no cenário do agronegócio é prejudicial para o meio ambiente,
+
         pois causa a poluição do solo e da água, emissão de gases tóxicos,
+
         perda de biodiversidade, morte de espécies e o desperdício.
+
     </p>
+
+
 
     <h2>Quais as vantagens de reciclar?</h2>
 
+
+
     <p>
+
         O manejo adequado dos materiais os transforma em diversas coisas, por exemplo:
+
     </p>
 
+
+
     <ul>
+
         <li>Papel/Papelão: Papel Ecológico;</li>
+
         <li>Plástico: PET Reciclável;</li>
+
         <li>Vidro: Frascos de Conservas;</li>
+
         <li>Metal: Latas de alumínio.</li>
+
     </ul>
+
+
 
     <h2>Como reciclar?</h2>
 
+
+
     <p>
+
         Na reciclagem separamos os materiais por categorias, e cada categoria tem sua respectiva cor:
+
     </p>
 
+
+
     <ul>
+
         <li>Papel e papelão: Azul;</li>
+
         <li>Plástico: Vermelho;</li>
+
         <li>Vidro: Verde;</li>
+
         <li>Metais (latas de alumínio e aço): Amarelo;</li>
+
         <li>Resíduos Orgânicos: Marrom;</li>
+
         <li>Madeira: Preto;</li>
+
         <li>Resíduos Perigosos (pilhas, baterias e produtos químicos): Laranja;</li>
+
         <li>Resíduos que não podem ser reciclados: Cinza.</li>
+
     </ul>
+
+
 
     <p>Os passos básicos são:</p>
 
+    
+
     <ol>
+
         <li>Separar os materiais recicláveis dos materiais orgânicos;</li>
+
         <li>Limpar as embalagens, se necessário;</li>
+
         <li>Colocar cada material na sua respectiva lixeira ou levá-lo para um ponto de coleta seletiva;</li>
+
         <li>Os materiais são recolhidos, separados por cooperativas ou empresas especializadas e enviados para indústrias que os transformam em novos produtos.</li>
+
     </ol>
 
+
+
     <p>
+
         Além da reciclagem, existem outras práticas importantes conhecidas como os 3Rs da Sustentabilidade:
+
     </p>
 
+
+
     <ul>
+
         <li>Reduzir;</li>
+
         <li>Reutilizar;</li>
+
         <li>Reciclar.</li>
+
     </ul>
+
+
 
     <h2>Resumo</h2>
 
+
+
     <p>
+
         A reciclagem reduz a poluição, preserva a biodiversidade e contribui para um futuro sustentável.
+
     </p>
+
+
 
     <section class="quiz">
 
+
+
         <h2>📝 Quiz</h2>
+
+
 
         <p><strong>1.</strong> Qual é a cor da lixeira destinada ao plástico?</p>
 
+
+
         <label><input type="radio" name="q1"> Azul</label><br>
+
         <label><input type="radio" name="q1" value="correta"> Vermelha</label><br>
+
         <label><input type="radio" name="q1"> Verde</label><br><br>
+
+
 
         <button onclick="corrigirQuiz()">Finalizar Quiz</button>
 
+
+
         <p id="resultado"></p>
+
+
 
     </section>
 
+
+
 </main>
+
+
 
 <footer id="contato">
 
+
+
     <h2>Contato</h2>
 
+
+
     <p>📧 contato@agroeduca.com.br</p>
+
     <p>📞 (42) 99942-8483</p>
+
     <p>📍 Reserva - PR</p>
+
+
 
     <br>
 
+
+
     <p>&copy; 2026 AgroEduca - Todos os direitos reservados.</p>
+
+
 
 </footer>
 
+
+
 <script>
+
 function corrigirQuiz() {
+
     let pontos = 0;
 
+
+
     if (document.querySelector('input[name="q1"][value="correta"]:checked')) {
+
         pontos++;
+
     }
 
+
+
     document.getElementById("resultado").innerHTML =
+
         "Você acertou " + pontos + " de 1 questão!";
+
 }
+
 </script>
 
+
+
 </body>
+
 </html>
