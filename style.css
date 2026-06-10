@@ -217,7 +217,7 @@ footer p{
     .hero p{
         font-size:1rem;
     }
-.btn-curso {
+a.btn-curso {
     display: inline-block;
     margin-top: 20px;
     padding: 12px 24px;
