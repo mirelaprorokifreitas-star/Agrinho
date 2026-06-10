@@ -217,23 +217,26 @@ footer p{
     .hero p{
         font-size:1rem;
     }
-/* ============================
-   Botão dos cursos
-============================ */
-
 .btn-curso {
     display: inline-block;
-    margin-top: 15px;
-    padding: 10px 20px;
+    margin-top: 20px;
+    padding: 12px 24px;
+
     background-color: #2563eb;
-    color: white;
+    color: #ffffff;
+
     text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-    transition: 0.3s;
+    font-size: 16px;
+    font-weight: 600;
+
+    border-radius: 10px;
+    border: none;
+
+    transition: 0.3s ease;
+    cursor: pointer;
 }
 
 .btn-curso:hover {
     background-color: #1d4ed8;
-    transform: scale(1.05);
+    transform: translateY(-2px);
 }
