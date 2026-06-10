@@ -8,4 +8,4 @@ Prompt Utilizado
 
 "Crie um site moderno, profissional e responsivo para uma plataforma de cursos online sobre agricultura chamada AgroAcademy. Utilize HTML5, CSS3 e JavaScript puro. O site deve conter cabeçalho com menu de navegação, seção principal (Hero), catálogo de cursos, sistema de busca, área de benefícios, depoimentos, estatísticas animadas, formulário de contato validado, menu responsivo para dispositivos móveis e botão de voltar ao topo. Os cursos devem possuir páginas ou seções interativas com conteúdo educacional e questionários para avaliação do aprendizado."
 
-O site se trata de um site de cursos, onde tem cursos sobre agricultura sustentável, irrigação inteligente entre outros cursos, o site ainda não conta com botões funcionais, devido a um erro no prompt.
+O site se trata de um site de cursos, onde tem cursos sobre o agronegócio sustentável, Reciclagem entre outros cursos, o site não tinha botões funcionais, devido a um erro no prompt, porém após algumas mudanças tivemos a solução, dois cursos presentes no site ainda estão em andamento, os outros dois foram desenvolvidos de forma autoral por mim.
