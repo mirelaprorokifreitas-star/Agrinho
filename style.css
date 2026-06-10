@@ -285,3 +285,49 @@ footer p{
     margin: 12px 0;
     font-size: 1.2rem;
 }
+/* =========================
+   PÁGINAS DOS CURSOS
+========================= */
+
+.conteudo-aula {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    line-height: 1.8;
+}
+
+.conteudo-aula h1 {
+    text-align: center;
+    color: #2e7d32;
+    margin-bottom: 30px;
+}
+
+.conteudo-aula h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #2e7d32;
+}
+
+.conteudo-aula p {
+    margin-bottom: 15px;
+}
+
+.conteudo-aula ul,
+.conteudo-aula ol {
+    margin: 15px 0 20px 30px;
+}
+
+.conteudo-aula li {
+    margin-bottom: 8px;
+}
+
+.imagem-aula {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.imagem-aula img {
+    max-width: 700px;
+    width: 100%;
+    border-radius: 10px;
+}
