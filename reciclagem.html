@@ -1,6 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reciclagem - AgroEduca</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="logo-area">
+        <div class="logo">
+            <img src="seedling_1f331.png" alt="AgroEduca Logo">
+        </div>
+
+        <div class="logo-name">
+            AgroEduca
+        </div>
+    </div>
+
+    <nav>
+        <a href="index.html">← Voltar ao Início</a>
+    </nav>
+
+</header>
+
 <main class="conteudo-aula">
 
-    <h1>Reciclagem</h1>
+    <h1>♻️ Reciclagem</h1>
 
     <h2>O que é reciclagem?</h2>
 
@@ -33,8 +64,7 @@
     <h2>Como reciclar?</h2>
 
     <p>
-        Na reciclagem separamos os materiais por categorias, e cada categoria tem sua
-        respectiva cor, sendo:
+        Na reciclagem separamos os materiais por categorias, e cada categoria tem sua respectiva cor:
     </p>
 
     <ul>
@@ -48,17 +78,21 @@
         <li>Resíduos que não podem ser reciclados: Cinza.</li>
     </ul>
 
+    <div class="imagem-aula">
+        <img src="lixeiras.png" alt="Lixeiras da coleta seletiva">
+    </div>
+
     <p>Os passos básicos são:</p>
 
     <ol>
         <li>Separar os materiais recicláveis dos materiais orgânicos;</li>
-        <li>Limpar as embalagens se necessário;</li>
+        <li>Limpar as embalagens, se necessário;</li>
         <li>Colocar cada material na sua respectiva lixeira ou levá-lo para um ponto de coleta seletiva;</li>
-        <li>Os materiais são recolhidos, separados por cooperativas ou empresas especializadas e, por fim, são enviados para indústrias que os transformam em novos produtos.</li>
+        <li>Os materiais são recolhidos, separados por cooperativas ou empresas especializadas e enviados para indústrias que os transformam em novos produtos.</li>
     </ol>
 
     <p>
-        Além da reciclagem existem outras práticas importantes, os 3Rs da Sustentabilidade.
+        Além da reciclagem, existem outras práticas importantes conhecidas como os 3Rs da Sustentabilidade:
     </p>
 
     <ul>
@@ -72,6 +106,22 @@
     <p>
         A reciclagem reduz a poluição, preserva a biodiversidade e contribui para um futuro sustentável.
     </p>
+
+    <section class="quiz">
+
+        <h2>📝 Quiz</h2>
+
+        <p><strong>1.</strong> Qual é a cor da lixeira destinada ao plástico?</p>
+
+        <label><input type="radio" name="q1"> Azul</label><br>
+        <label><input type="radio" name="q1" value="correta"> Vermelha</label><br>
+        <label><input type="radio" name="q1"> Verde</label><br><br>
+
+        <button onclick="corrigirQuiz()">Finalizar Quiz</button>
+
+        <p id="resultado"></p>
+
+    </section>
 
 </main>
 
@@ -88,5 +138,19 @@
     <p>&copy; 2026 AgroEduca - Todos os direitos reservados.</p>
 
 </footer>
+
+<script>
+function corrigirQuiz() {
+    let pontos = 0;
+
+    if (document.querySelector('input[name="q1"][value="correta"]:checked')) {
+        pontos++;
+    }
+
+    document.getElementById("resultado").innerHTML =
+        "Você acertou " + pontos + " de 1 questão!";
+}
+</script>
+
 </body>
 </html>
