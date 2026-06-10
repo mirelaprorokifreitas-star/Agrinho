@@ -264,3 +264,23 @@ a.btn-curso {
 .btn-breve:hover {
     background-color: #8a8a8a;
 }
+
+footer{
+    width: 100%;
+    background: #1b5e20;
+    color: white;
+
+    padding: 50px 20px;
+
+    text-align: left;
+}
+
+footer h2{
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+footer p{
+    margin: 12px 0;
+    font-size: 1.2rem;
+}
